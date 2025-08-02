@@ -1,1 +1,107 @@
+:root {
+    --black: #000000;
+    --cambridge-blue: #839788;
+    --champagne: #eee0cb;
+    --khaki: #baa898;
+    --columbia-blue: #bfd7ea;
+    --primary-font: 'Red Hat Display', Arial, sans-serif;
+    --heading-font: 'Kalnia', serif;
+}
 
+
+header {
+    background: var(--columbia-blue);
+    padding: 1rem 0;
+    display: grid;
+    grid-template-columns: 120px 1fr 1fr;
+    align-items: center;
+}
+
+header nav a {
+    margin-right: 15px;
+    text-decoration: none;
+    color: var(--black);
+    font-weight: 700;
+    transition: color 0.2s;
+}
+
+header nav a:hover {
+    color: var(--khaki);
+    text-decoration: underline;
+}
+
+
+main {
+    font-family: var(--primary-font);
+    padding: 2rem;
+    background: var(--champagne);
+    color: var(--black);
+}
+
+main h1, main h2 {
+    font-family: var(--heading-font);
+    color: var(--cambridge-blue);
+    position:absolute;
+    top: 20px;
+    width: 100%;
+    padding:16px;
+    text-align: center;
+    opacity: 0,7;
+    background-color: #bfd7ea;
+    color: #000;
+}
+
+main section {
+    background: var(--columbia-blue);
+    margin: 1.5rem 0;
+    padding: 1rem 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(131, 151, 136, 0.08);
+}
+
+main ul {
+    padding-left: 1.5rem;
+}
+
+main img {
+    border-radius: 10px;
+    box-shadow: 0 4px 16px rgba(131, 151, 136, 0.15);
+    margin-bottom: 1.5rem;
+    max-width: 100%;
+    height: auto;
+}
+
+
+footer {
+    background: var(--black);
+    color: var(--champagne);
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
+
+footer a {
+    color: var(--columbia-blue);
+    text-decoration: underline;
+}
+
+.hero{
+
+position: relative;
+padding: 2rem 1rem;
+background: linear-gradient(135deg, var(--columbia-blue) 60%, var(--champagne) 100%);
+border-radius: 12px;
+text-align: center;
+box-shadow: 0 4px 24px rgba(131, 151, 136, 0.12);
+}
+.hero img {
+    display: block;
+    max-width: 150px;
+    margin-bottom: 1rem;
+    height: auto;
+}
+
+.hero  article img {
+   float: right;
+   max-width: 125px;
+}
