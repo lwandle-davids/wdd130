@@ -1,107 +1,83 @@
-:root {
-    --black: #000000;
-    --cambridge-blue: #839788;
-    --champagne: #eee0cb;
-    --khaki: #baa898;
-    --columbia-blue: #bfd7ea;
-    --primary-font: 'Red Hat Display', Arial, sans-serif;
-    --heading-font: 'Kalnia', serif;
-}
-
-
-header {
-    background: var(--columbia-blue);
-    padding: 1rem 0;
-    display: grid;
-    grid-template-columns: 120px 1fr 1fr;
-    align-items: center;
-}
-
-header nav a {
-    margin-right: 15px;
-    text-decoration: none;
-    color: var(--black);
-    font-weight: 700;
-    transition: color 0.2s;
-}
-
-header nav a:hover {
-    color: var(--khaki);
-    text-decoration: underline;
-}
-
-
-main {
-    font-family: var(--primary-font);
-    padding: 2rem;
-    background: var(--champagne);
-    color: var(--black);
-}
-
-main h1, main h2 {
-    font-family: var(--heading-font);
-    color: var(--cambridge-blue);
-    position:absolute;
-    top: 20px;
-    width: 100%;
-    padding:16px;
-    text-align: center;
-    opacity: 0,7;
-    background-color: #bfd7ea;
-    color: #000;
-}
-
-main section {
-    background: var(--columbia-blue);
-    margin: 1.5rem 0;
-    padding: 1rem 1.5rem;
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(131, 151, 136, 0.08);
-}
-
-main ul {
-    padding-left: 1.5rem;
-}
-
-main img {
-    border-radius: 10px;
-    box-shadow: 0 4px 16px rgba(131, 151, 136, 0.15);
-    margin-bottom: 1.5rem;
-    max-width: 100%;
-    height: auto;
-}
-
-
-footer {
-    background: var(--black);
-    color: var(--champagne);
-    text-align: center;
-    padding: 1rem 0;
-    margin-top: 2rem;
-}
-
-footer a {
-    color: var(--columbia-blue);
-    text-decoration: underline;
-}
-
-.hero{
-
-position: relative;
-padding: 2rem 1rem;
-background: linear-gradient(135deg, var(--columbia-blue) 60%, var(--champagne) 100%);
-border-radius: 12px;
-text-align: center;
-box-shadow: 0 4px 24px rgba(131, 151, 136, 0.12);
-}
-.hero img {
-    display: block;
-    max-width: 150px;
-    margin-bottom: 1rem;
-    height: auto;
-}
-
-.hero  article img {
-   float: right;
-   max-width: 125px;
-}
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="White water rafting project">
+    <meta name="author" content="The white water rafting project wire frame">
+    <title>WHITERAFTING</title>
+    <link rel="stylesheet" href="/wwr/styles/styles.css">
+    <link rel="stylesheet" href="/wwr/css/wwr-responsive.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kalnia:wght@400;700&family=Red+Hat+Display:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <img src="images/wwr-logo.png" alt="White Water Rafting Logo" style="max-width:100px;">
+        <h1>Zimbabwe Rafting Adventures</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Trips</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <p>
+                Experience the thrill of white water rafting on the mighty Zambezi River! Our team is passionate about adventure and safety, offering unforgettable rafting trips for all skill levels. Whether you're a beginner or a seasoned rafter, we have something for everyone.
+            </p>
+        </section>
+        <section>
+            <h2>History</h2>
+            <div style="display: flex; flex-direction: column; align-items: center;">
+                <figure>
+                    <img src="images/rafting-team.jpg" alt="Rafting Team" style="max-width:300px; margin: 1rem 0;">
+                    <figcaption>Our team ready for adventure on the Zambezi River</figcaption>
+                </figure>
+                <p style="max-width:600px;">
+                    Founded in 2010, Zimbabwe Rafting Adventures has been providing thrilling and safe rafting experiences for over a decade, introducing thousands to the excitement of white water rafting in Bulawayo.
+                </p>
+            </div>
+        </section>
+        <section>
+            <h2>Adventure Awaits You!</h2>
+            <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+                <img src="images/rapid1.jpg" alt="Raft navigating a rapid">
+                <img src="images/rapid2.jpg" alt="Group celebrating after rafting">
+                <img src="images/river-view.jpg" alt="Scenic view of the Zambezi River">
+                <img src="images/wildlife.jpg" alt="Wildlife near the river">
+                <img src="images/sunset-rafting.jpg" alt="Rafting at sunset">
+            </div>
+        </section>
+        <section>
+            <h2>About Us</h2>
+            <p>
+                Our mission is to provide safe, exciting, and memorable rafting experiences while showcasing the natural beauty of Zimbabwe. We are committed to environmental sustainability and supporting our local community.
+            </p>
+        </section>
+        <section>
+            <h2>Why Choose Us?</h2>
+            <ul>
+                <li>Certified and experienced guides</li>
+                <li>Top-quality safety equipment</li>
+                <li>Customizable trips for families, groups, and solo adventurers</li>
+                <li>Stunning views of the Zambezi River and surrounding wildlife</li>
+            </ul>
+        </section>
+        <p>
+            If you have any questions or need assistance, please feel free to contact us through our customer service section.
+        </p>
+    </main>
+    <footer>
+        <div style="margin-bottom: 0.5rem;">
+            <a href="https://facebook.com"><img src="images/facebook.svg" alt="Facebook" style="width:32px;vertical-align:middle;"></a>
+            <a href="https://twitter.com"><img src="images/twitter.svg" alt="Twitter" style="width:32px;vertical-align:middle;"></a>
+            <a href="https://instagram.com"><img src="images/instagram.svg" alt="Instagram" style="width:32px;vertical-align:middle;"></a>
+        </div>
+        <p>Contact me at: <a href="mailto:lwandlep.inkettncube@gmail.com">lwandlep.inkettncube@gmail.com</a></p>
+        <p>©2025 🎶✌ Pinkett, Zimbabwe</p>
+    </footer>
+</body>
+</html>
